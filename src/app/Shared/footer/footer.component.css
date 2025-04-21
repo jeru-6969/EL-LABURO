@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.anime-card {
+  width: 320px;
+  height: 480px;
+  background: linear-gradient(145deg, #e0f7ff, #ffe6fa);
+  border: 3px solid #ff6ec7;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(255, 110, 199, 0.6);
+  position: relative;
+  animation: powerUp 1s ease-out;
+  font-family: 'Press Start 2P', cursive;
+  color: #d9006c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.anime-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #ff6ec7;
+}
+
+.anime-card h2 {
+  font-size: 1rem;
+  margin: 16px 0 8px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.anime-card p {
+  font-size: 0.65rem;
+  padding: 0 12px;
+  color: #77003a;
+}
+
+.anime-button {
+  background: #ff008c;
+  color: white;
+  padding: 8px 16px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: glow 1.5s infinite alternate;
+  font-size: 0.6rem;
+}
+
+.anime-button:hover {
+  background-color: #ff33aa;
+}
+
+/* Animaciones */
+@keyframes powerUp {
+  0% {
+    transform: scale(0.8) rotate(-5deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #ff0077, 0 0 20px #ff0077;
+  }
+  to {
+    box-shadow: 0 0 20px #ff33aa, 0 0 30px #ff33aa;
+  }
+}
