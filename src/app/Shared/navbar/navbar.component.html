@@ -1,10 +1,43 @@
-<div class="card" style="width: 18rem;" *ngFor="let producto of productos;">
-  
-    <div class="card-body">
-     <img [src]="producto.imagen" alt="">
-        <h5 class="card-title">{{producto.titulo}}</h5>
-        <p class="card-text">{{producto.descripccion}}</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+<body>
+  <header>
+    <h1><i class="fas fa-music"></i> Teoría Musical</h1>
+    <p>Explorá los fundamentos del lenguaje musical</p>
+  </header>
+
+  <main>
+    <div class="section">
+      <div class="icon"><i class="fas fa-guitar"></i></div>
+      <h2>Notas y Escalas</h2>
+      <p>Aprendé qué son las notas musicales, cómo se forman las escalas mayores y menores, y cómo se relacionan entre sí en el círculo de quintas.</p>
+      <button class="music-button" (click)="camPah()">
+        🎶 Empezar a Aprender
+      </button>
+      
     </div>
-</div>
-<p>hola</p>
+
+    <div class="section">
+      <div class="icon"><i class="fas fa-drum"></i></div>
+      <h2>Ritmo y Compás</h2>
+      <p>Comprendé el pulso musical, los distintos tipos de compases y cómo se combinan figuras rítmicas para crear patrones únicos.</p>
+      <button class="music-button">
+        🎶 Empezar a Aprender
+      </button>
+      
+    </div>
+
+    <div class="section">
+      <div class="icon"><i class="fas fa-keyboard"></i></div>
+      <h2>Armonía</h2>
+      <p>Descubrí la magia de los acordes, progresiones armónicas y cómo se construyen las canciones desde su estructura tonal.</p>
+      <button class="music-button">
+        🎶 Empezar a Aprender
+      </button>
+      
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Teoría Musical. Todos los derechos reservados.</p>
+  </footer>
+</body>
+

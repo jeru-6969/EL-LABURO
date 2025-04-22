@@ -1,15 +1,18 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { Router } from 'express';
 
 
 @Component({
   selector: 'app-navbar',
-  imports: [NgFor],
+  imports: [FormsModule,RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-productos=[
-  {titulo:'esta es una maravillosa carta querido',descripccion:'come un poquito de sopita hijo',imagen:'/assets/abubu.jpg'}
-];
+constructor(private router: Router){}
+camPag(){
+  this.router.navigate(['/notas-escalas'])
+}
 }
