@@ -7,8 +7,8 @@ import { RitmoCompasComponent } from './musikita/ritmo-compas/ritmo-compas.compo
 export const routes: Routes = [
     {path: '',redirectTo:'/armonia',pathMatch:'full'},
     {path:'armonia',component:ArmoniaComponent},
-    {path:'notas y escalas',component:NotasEscalasComponent},
-    {path:'ritmo y compas',component:RitmoCompasComponent},
+    {path:'notas',component:NotasEscalasComponent},
+    {path:'ritmo',component:RitmoCompasComponent},
 
 
 ];
