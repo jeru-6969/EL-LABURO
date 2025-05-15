@@ -1,4 +1,12 @@
-/* Estilos para la clase .section */
+.ponele {
+  margin:  auto;
+  background-color: #111122; 
+}
+.jamon {
+  color: #e7b324;
+  background: #282840;
+ 
+}
 .section {
     background-color: #6a0dad;  /* Morado oscuro */
     color:#f4c542;

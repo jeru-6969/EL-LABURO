@@ -1,3 +1,10 @@
 <app-navbar></app-navbar>
+<nav [ngClass]="{
+  'nav-notas': currentRoute === '/notas',
+  'nav-ritmo': currentRoute === '/ritmo',
+  'nav-armonia': currentRoute === '/armonia'
+}">
+  <!-- contenido del navbar -->
+</nav>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

@@ -1,18 +1,20 @@
+.aja{
+  background-color: #111122;
+}
 .section {
-    background-color: #6a0dad;  /* Morado oscuro */
+    
     color:#f4c542;
     padding: 3rem 2rem;
     border-radius: 10px;
-    margin: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 .harmony-container {
-    background-color: ;
+   
     max-width: 800px;
-    margin: 2rem auto;
+    margin: auto;
     padding: 2rem;
-    background: #fdf9ff;
+    
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', sans-serif;
@@ -30,12 +32,12 @@
     margin-bottom: 2rem;
     padding: 1rem;
     border-left: 4px solid #7a3eb1;
-    background-color: #fff;
+    background-color:#321244;
     border-radius: 8px;
   }
   
   .section h2 {
-    color: #5e2a91;
+    color: #e4b417;
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
   }

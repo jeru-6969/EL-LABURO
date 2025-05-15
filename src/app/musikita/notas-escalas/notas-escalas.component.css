@@ -1,6 +1,9 @@
+.aja{
+  background-color: #206694;
+}
 .notes-container {
     max-width: 800px;
-    margin: 2rem auto;
+    margin:  auto;
     padding: 2rem;
     background: #f5fbff;
     border-radius: 12px;
