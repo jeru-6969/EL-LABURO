@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #111 30%, #222);
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2.5rem;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #e63946;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(230, 57, 70, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+.card img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.info {
+  padding: 1rem;
+}
+
+.info h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #e63946;
+}
+
+.info p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}
+.btn-rock {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(230, 57, 70, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-rock::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: left 0.6s ease;
+}
+
+.btn-rock:hover {
+  background-color: #ff2e3e;
+  box-shadow: 0 0 20px rgba(255, 46, 62, 0.6);
+}
+
+.btn-rock:hover::before {
+  left: 125%;
+}
+.ohh {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: #fff;
+  background-image: 
+    url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+    radial-gradient(circle at 30% 30%, rgba(255, 0, 0, 0.15), transparent 50%),
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.05), transparent 60%);
+  background-blend-mode: overlay;
+  background-size: cover;
+}

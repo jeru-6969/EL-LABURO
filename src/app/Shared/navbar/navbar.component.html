@@ -7,21 +7,27 @@
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
+
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/armonia" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+          <a class="nav-link active" aria-current="page" routerLink="/armonia" routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }">
             <i class="bi-music-note"></i> Armonía
           </a>
         </li>
-        
+
         <li class="nav-item">
           <a class="nav-link active" routerLink="/ritmo" routerLinkActive="active">
             🥁Ritmo y Compás
           </a>
         </li>
+        <li class="nav-item">
+        <a class="nav-link active" routerLink="/bellezas" routerLinkActive="active">
+          <i ></i> Bellezas😍🎸
+        </a>
+      </li>
         <li class="nav-item">
           <a class="nav-link active" routerLink="/notas" routerLinkActive="active">
             <i class="bi-music-note-list"></i> Notas y Escalas
@@ -29,6 +35,8 @@
         </li>
       </ul>
       
+    
+
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Buscar música..." aria-label="Search">
         <button class="btn btn-outline-light" type="submit">
