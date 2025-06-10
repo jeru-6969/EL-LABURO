@@ -6,7 +6,7 @@
 
   <h1>🎸 Galería de Guitarras</h1>
   
-  <div class="container">
+  <!--<div class="container">
     <div class="card">
       <img src="https://www.heavenimagenes.com/heavencommerce/e11e0483-99c8-4ad2-b3a9-bfb26fc81402/images/v2/IBANEZ/2103171142315801_01_medium.jpg" alt="Guitarra eléctrica roja" />
       <div class="info">
@@ -93,9 +93,9 @@
     </div>
 
     <div class="card">
-      <img src="https://musycorp.com/wp-content/uploads/2022/12/guitarra-electrica-ibanez-grg-131-ex-tienda-musical-francisco-el-hombre-musycorp-2.png" alt="Guitarra Les Paul" />
+      <img src="https://sc1.musik-produktiv.com/pic-010156371xxl/gibson-70s-explorer-antique-natural.jpg" />
       <div class="info">
-        <h2>Les Paul Classic</h2>
+        <h2>puto</h2>
         <p>Sonido cálido y potente con humbuckers. Perfecta para hard rock y metal clásico.</p>
          <button class="btn-rock">R0CK</button>
       </div>
@@ -162,3 +162,15 @@
   </div>
 
 </div>
+-->
+<h1>productos</h1>
+<div class="card-container">
+  <ng-container *ngIf="productos && productos.length">
+    <ng-container *ngFor="let producto of productos">
+      <div *ngIf="producto.disponible" class="card">
+        <img [src]="producto.imagen" alt="{{producto.nombre}}" class="produc-image">
+        <h2>{{producto.nombre}}</h2>
+        <p>{{producto.descripccion}}</p>
+        <p>{{producto.precio}}</p>
+        <button type="button" class="btn btn-outline-primary" (click)="agregar(producto)">agregar al carrito</button>
+      </div>
