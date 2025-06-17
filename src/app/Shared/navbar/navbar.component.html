@@ -34,7 +34,12 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/carrito']">
+          <a class="nav-link active" routerLink="/carrito" routerLinkActive="active">
+            <i class="bi-music-note-list"></i> carrito
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/compra'>
             <i>hola</i>
             <span *ngIf="cantidadProductos>0">
              {{cantidadProductos}}

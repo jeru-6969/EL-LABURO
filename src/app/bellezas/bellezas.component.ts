@@ -15,14 +15,14 @@ export class BellezasComponent {
 productos:aja[]=[
  {
     id:1,
-    nombre:'capaz',
-    descripccion:'hola',
+    nombre:'no',
+    descripccion:'holo',
     precio:99,
     imagen:'https://sc1.musik-produktiv.com/pic-010156371xxl/gibson-70s-explorer-antique-natural.jpg',
     disponible:true,
-    cantidad:1
+    cantidad:1,
+ },
 
- }
 ]
 constructor(private carritoService:CarritoService){}
   agregar(producto:aja){
