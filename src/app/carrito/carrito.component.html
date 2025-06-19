@@ -21,7 +21,7 @@
             <img [src]="item.producto.imagen" alt="{{item.producto.nombre}}"  class="img-thumbnail" style="width: 70px;" height="70px"> 
         </td>
         <td class="fw-bold">{{ item.producto.nombre }}</td>
-        <td>{{item.producto.imagen}}</td>
+       
         <td>{{item.producto.descripccion}}</td>
         <td>{{ item.producto.precio | currency }}</td>
         <td>
@@ -43,6 +43,6 @@
 <div class="text-end mt-4" *ngIf="productosEnCarrito.length > 0" >
     <h4 class="fw-bold">total: {{calcularTotal() | currency}}</h4>
     <button class="btn btn-primary mt-2" (click)="irAformularioCompra()">
-        <i class="bi bi-card-check"></i> realizar compraz
+        <i class="bi bi-card-check"></i> realizar compra
     </button>
 </div></div>
